@@ -1,0 +1,157 @@
+.header-container {
+  background-color: #2563eb; /* Warna biru sesuai header */
+  display: flex;             /* Mengatur posisi gambar dan teks agar sejajar */
+  align-items: center;       /* Memosisikan elemen secara vertikal di tengah */
+  padding: 15px 20px;        /* Jarak di dalam header */
+  gap: 15px;                 /* Jarak antara gambar dan teks */
+}
+
+.header-logo {
+  height: 50px;              /* Sesuaikan tinggi gambar */
+  width: auto;               /* Menjaga proporsi gambar */
+}
+
+.header-title {
+  color: white;              /* Warna teks putih */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+/* Reset Basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2563eb; /* Warna Biru Utama */
+    padding: 15px 50px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo h2 {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #1d4ed8;
+    color: #ffffff;
+}
+
+.btn-login {
+    background-color: #ffffff;
+    color: #2563eb;
+    padding: 8px 18px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #e0e7ff;
+}
+
+/* Hero Section / Beranda Gambar */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 85vh; /* Tinggi area gambar */
+    /* Mengganti background dengan Foto Gerbang Sekolah Anda */
+    background-image: url('gerbang-smkn1cijati.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Overlay Transparan Gelap Kebiruan */
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Efek filter biru-transparan sesuai tema navbar */
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.75), rgba(15, 23, 42, 0.7));
+    z-index: 1;
+}
+
+/* Konten Teks di Atas Gambar */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Tombol Kuning (Pelajari Profil Kami) */
+.btn-primary {
+    display: inline-block;
+    background-color: #f59e0b; /* Warna Kuning / Emas */
+    color: #1e293b;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d97706;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
